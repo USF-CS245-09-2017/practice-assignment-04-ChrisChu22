@@ -2,7 +2,7 @@ public class InsertionSort implements SortingAlgorithm {
 
     @Override
     //insertion sort overriding the sorting function in sorting algorightm
-    public int[] sort(int[] a)
+    public void sort(int[] a)
     {
         for (int i = 1; i < a.length; i++)
         {
@@ -12,10 +12,9 @@ public class InsertionSort implements SortingAlgorithm {
             {
                 a[j + 1] = a[j];
                 j--;
-            }//while
+            } //while
             a[j+1] = temp;
-        }//for
-        return a;
+        } //for
     }
 
 

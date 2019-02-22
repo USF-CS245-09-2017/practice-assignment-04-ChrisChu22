@@ -2,13 +2,12 @@ public class SelectionSort implements SortingAlgorithm{
 
     @Override
     //selection sort using the swap and smallest function
-    public int[] sort(int[] a) {
+    public void sort(int[] a) {
 
             for (int i = 0; i < a.length; i++)
             {
                 swap(a, i, smallest(a,i));
             } //for
-            return a;
     }
 
     //function that swaps number
